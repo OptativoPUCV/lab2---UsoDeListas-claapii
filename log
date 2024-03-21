@@ -16,3 +16,9 @@ exercises.c:62:20: error: initialization of ‘int *’ from ‘int’ makes poi
 cc1: all warnings being treated as errors
 Compilation failed
 8549ce1
+Thu 21 Mar 2024 08:17:48 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  2|3
+total_score: 20/70
+708ee6f
