@@ -204,3 +204,18 @@ Thu 21 Mar 2024 09:01:28 PM UTC:
  tests:  4|1
 total_score: 50/70
 05eb11c
+Thu 21 Mar 2024 09:02:22 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:135:9: error: expected ‘(’ before ‘{’ token
+  135 |         {
+      |         ^
+      |         (
+exercises.c:137:36: error: ‘topChar’ undeclared (first use in this function)
+  137 |           if ((cadena[i] == ')' && topChar != '(') || (cadena[i] == ']' && topChar != '[') ||            (cadena[i] == '}' && topChar != '{'))
+      |                                    ^~~~~~~
+exercises.c:137:36: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+148a453
