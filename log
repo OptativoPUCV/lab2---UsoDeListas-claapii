@@ -34,3 +34,14 @@ Thu 21 Mar 2024 08:22:19 PM UTC:
  tests:  3|2
 total_score: 40/70
 7c11847
+Thu 21 Mar 2024 08:26:28 PM UTC: 
+ exercises.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:107:9: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  107 |   *dato = top(PA);
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+a0cda67
