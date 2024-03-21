@@ -4,3 +4,15 @@ Thu 21 Mar 2024 08:12:16 PM UTC:
  tests:  1|4
 total_score: 10/70
 2434d7e
+Thu 21 Mar 2024 08:15:05 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:62:20: error: implicit declaration of function ‘head’ [-Werror=implicit-function-declaration]
+   62 |    int *elemento = head(L);
+      |                    ^~~~
+exercises.c:62:20: error: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+cc1: all warnings being treated as errors
+Compilation failed
+8549ce1
