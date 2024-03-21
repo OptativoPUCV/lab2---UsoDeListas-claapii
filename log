@@ -82,3 +82,20 @@ exercises.c:135:35: error: invalid use of incomplete typedef ‘Stack’ {aka �
       |                                   ^~
 Compilation failed
 3a15686
+Thu 21 Mar 2024 08:41:21 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:133:24: error: comparison between pointer and zero character constant [-Werror=pointer-compare]
+  133 |          if (top(pila) == '\0') return 0;
+      |                        ^~
+exercises.c:133:14: note: did you mean to dereference the pointer?
+  133 |          if (top(pila) == '\0') return 0;
+      |              ^
+exercises.c:135:35: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  135 |        char topChar = *(char*)pila->top->data;
+      |                                   ^~
+cc1: all warnings being treated as errors
+Compilation failed
+c37f15b
