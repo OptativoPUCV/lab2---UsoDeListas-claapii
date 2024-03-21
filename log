@@ -219,3 +219,9 @@ exercises.c:137:36: error: ‘topChar’ undeclared (first use in this function)
 exercises.c:137:36: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 148a453
+Thu 21 Mar 2024 09:03:08 PM UTC: 
+ exercises.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ tests:  4|1
+total_score: 50/70
+1ff0eb4

@@ -130,14 +130,12 @@ int parentesisBalanceados(char *cadena)
       else if ((cadena[i] == ')') || (cadena[i] == ']') || (cadena[i] == '}'))
       {
         if (top(P) == NULL) return 0;
-        
-        else if
+
+        char topChar = *(char*)top(P);
+        printf("%c", topChar);
+        if ((cadena[i] == ')' && topChar != '(') || (cadena[i] == ']' && topChar != '[') ||            (cadena[i] == '}' && topChar != '{'))
         {
-          char topChar = *(char*)top(P);
-          if ((cadena[i] == ')' && topChar != '(') || (cadena[i] == ']' && topChar != '[') ||            (cadena[i] == '}' && topChar != '{'))
-          {
-            return 0;
-          }
+          return 0;
         }
       }
       pop(P);
